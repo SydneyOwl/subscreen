@@ -3,8 +3,12 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 */
 package main
 
-import "sscreen/cmd"
+import (
+	"github.com/spf13/cobra"
+	"sscreen/cmd"
+)
 
 func main() {
+	cobra.MousetrapHelpText = ""
 	cmd.Execute()
 }
